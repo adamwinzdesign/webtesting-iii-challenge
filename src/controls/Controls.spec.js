@@ -17,3 +17,10 @@ import Controls from './Controls';
 //     expect(tree).toMatchSnapshot();
 //   });
 // });
+
+test('Controls matches snapshot', () => {
+  const locked = 'Unlock Gate';
+  const closed = 'Open Gate';
+  const tree = render(<Controls locked={locked} closed={closed} />);
+  expect(tree).toMatchSnapshot();
+})

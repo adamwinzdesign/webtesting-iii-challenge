@@ -17,3 +17,10 @@ import Dashboard from './Dashboard';
 //     expect(tree).toMatchSnapshot();
 //   });
 // });
+
+test('Dashboard matches snapshot', () => {
+  const locked = true;
+  const closed = true;
+  const tree = render(<Dashboard locked={locked} closed={closed} />);
+  expect(tree).toMatchSnapshot();
+})
