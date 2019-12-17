@@ -10,11 +10,13 @@ Object {
       >
         <button
           class="toggle-btn"
+          data-testid="lockOrUnlock"
         >
           Unlock Gate
         </button>
         <button
           class="toggle-btn"
+          data-testid="openOrClose"
           disabled=""
         >
           Open Gate
@@ -28,11 +30,13 @@ Object {
     >
       <button
         class="toggle-btn"
+        data-testid="lockOrUnlock"
       >
         Unlock Gate
       </button>
       <button
         class="toggle-btn"
+        data-testid="openOrClose"
         disabled=""
       >
         Open Gate
